@@ -4,7 +4,7 @@ import pytest
 def test_capitalize():
     # initialize
     value = "test value"
-    expected = "Test value"
+    expected = "Tes t value"
     # act
     res = custom_capitalize(value)
     # test
@@ -23,10 +23,10 @@ def test_none_capitalize():
 
 
 # TODO Write a test for string starting with a number
-def test_none_capitalize():
+def test_none2_capitalize():
     # initialize
     value = "9 abcd"
-    expected = "9 abcd"
+    expected = "9 a bcd"
     # act
     res = custom_capitalize(value)
     # test
