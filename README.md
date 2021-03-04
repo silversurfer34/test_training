@@ -45,6 +45,18 @@ Run locust
 
 Optionaly an actual online rest API can be tested `https://petstore.swagger.io/`
 ***
+###System test or e2e test with selenium
+#### Prerequisites:
+* install selenium libraries
+  `pip install selenium`
+* install selenium web driver https://www.selenium.dev/documentation/en/selenium_installation/installing_webdriver_binaries/
+for chrome https://sites.google.com/a/chromium.org/chromedriver/getting-started
+
+* install selenium ide https://www.selenium.dev/selenium-ide/
+
+#### Selenium test with IDE
+#### Selenium test from python
+
 ## Pytest tutorial
 ### Prerequisites
 

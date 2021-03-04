@@ -1,0 +1,144 @@
+{
+  "id": "16a7ef07-4535-49c1-a91b-8724d9bdd54b",
+  "version": "2.0",
+  "name": "python",
+  "url": "http://www.python.org",
+  "tests": [{
+    "id": "e48ff8ed-e2a4-4141-afe0-91b7e3ff4a2d",
+    "name": "01",
+    "commands": [{
+      "id": "b37a2cf3-1064-451c-9458-30a52fa05789",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.python.org/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "923f2ce0-4fd8-4b22-b960-bb01b8933e45",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1246x834",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b49a6d22-8baf-4990-a017-6f146b35179f",
+      "comment": "",
+      "command": "click",
+      "target": "id=id-search-field",
+      "targets": [
+        ["id=id-search-field", "id"],
+        ["name=q", "name"],
+        ["css=#id-search-field", "css:finder"],
+        ["xpath=//input[@id='id-search-field']", "xpath:attributes"],
+        ["xpath=//div[@id='touchnav-wrapper']/header/div/div/div/form/fieldset/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b797de68-2626-4c12-ae10-b746f873991c",
+      "comment": "",
+      "command": "type",
+      "target": "id=id-search-field",
+      "targets": [
+        ["id=id-search-field", "id"],
+        ["name=q", "name"],
+        ["css=#id-search-field", "css:finder"],
+        ["xpath=//input[@id='id-search-field']", "xpath:attributes"],
+        ["xpath=//div[@id='touchnav-wrapper']/header/div/div/div/form/fieldset/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "pytest"
+    }, {
+      "id": "511e52d6-f4ee-4e65-a08a-4ab0458d3f03",
+      "comment": "",
+      "command": "click",
+      "target": "id=submit",
+      "targets": [
+        ["id=submit", "id"],
+        ["name=submit", "name"],
+        ["css=#submit", "css:finder"],
+        ["xpath=//button[@id='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='touchnav-wrapper']/header/div/div/div/form/fieldset/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'GO')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "94a3a82d-91d3-4549-bbe4-ce4392b97896",
+      "comment": "",
+      "command": "click",
+      "target": "css=#content > .container",
+      "targets": [
+        ["css=#content > .container", "css:finder"],
+        ["xpath=//div[@id='content']/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cdfe37bf-976d-4646-a8f8-1d1eba35c9a5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.list-recent-events > li:nth-child(1)",
+      "targets": [
+        ["css=.list-recent-events > li:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='content']/div/section/form/ul/li", "xpath:idRelative"],
+        ["xpath=//form/ul/li", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7c79a362-fdbf-4168-907c-f4961168cd85",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(1) .highlighted:nth-child(2)",
+      "targets": [
+        ["css=li:nth-child(1) .highlighted:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='content']/div/section/form/ul/li/p/span[2]", "xpath:idRelative"],
+        ["xpath=//p/span[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "062f49bc-7804-4cf0-a5f0-929d8aa27be3",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(1) .highlighted:nth-child(2)",
+      "targets": [
+        ["css=li:nth-child(1) .highlighted:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='content']/div/section/form/ul/li/p/span[2]", "xpath:idRelative"],
+        ["xpath=//p/span[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "71b3b48b-cd01-44e9-b0db-e0710b562d0a",
+      "comment": "",
+      "command": "doubleClick",
+      "target": "css=li:nth-child(1) .highlighted:nth-child(2)",
+      "targets": [
+        ["css=li:nth-child(1) .highlighted:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='content']/div/section/form/ul/li/p/span[2]", "xpath:idRelative"],
+        ["xpath=//p/span[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "068ecf10-17ce-441c-b57e-f4b4ab7e90e8",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=li:nth-child(1) .highlighted:nth-child(2)",
+      "targets": [
+        ["css=li:nth-child(1) .highlighted:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='content']/div/section/form/ul/li/p/span[2]", "xpath:idRelative"],
+        ["xpath=//p/span[2]", "xpath:position"]
+      ],
+      "value": "pytest"
+    }]
+  }],
+  "suites": [{
+    "id": "d83d5b4b-844c-45c1-89cb-92d6ce80cfc3",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["e48ff8ed-e2a4-4141-afe0-91b7e3ff4a2d"]
+  }],
+  "urls": ["http://www.python.org/"],
+  "plugins": []
+}

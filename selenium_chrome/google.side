@@ -1,0 +1,84 @@
+{
+  "id": "f9c7ca56-da22-4d60-9f8d-0b89b834feee",
+  "version": "2.0",
+  "name": "google",
+  "url": "http://localhost:8080/",
+  "tests": [{
+    "id": "0d8811a9-4970-4be9-bc1e-74fa6eacf044",
+    "name": "01",
+    "commands": [{
+      "id": "5c43e3ef-2ce6-4b4b-ac40-11ddcc9a5707",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "613bbfb9-e4c1-4efd-abf7-1e5cf88245b2",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "780x834",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "07b6a3ce-e756-4dd2-9fb0-ab8de9fea35c",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "Swagger UI",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "179d774b-f0f9-4096-a3cb-69b68d8a4879",
+      "comment": "",
+      "command": "click",
+      "target": "css=.url",
+      "targets": [
+        ["css=.url", "css:finder"],
+        ["xpath=//div[@id='swagger-ui']/section/div[2]/div[2]/div/section/div/div/hgroup/a/span", "xpath:idRelative"],
+        ["xpath=//span", "xpath:position"],
+        ["xpath=//span[contains(.,'http://localhost:8080/v2/swagger.json')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win7663",
+      "windowTimeout": 2000
+    }, {
+      "id": "f0922874-40a2-4225-963b-664835ed6472",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win7663}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ee8df25d-b029-4ff0-a959-58c32ed4575e",
+      "comment": "",
+      "command": "click",
+      "target": "css=div:nth-child(8) .cm-string",
+      "targets": [
+        ["css=div:nth-child(8) .cm-string", "css:finder"],
+        ["xpath=//div[8]/pre/span/span[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "358c6b3d-f15a-46cf-97e6-07068b1285f1",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=div:nth-child(8) .cm-string",
+      "targets": [
+        ["css=div:nth-child(8) .cm-string", "css:finder"],
+        ["xpath=//div[8]/pre/span/span[2]", "xpath:position"]
+      ],
+      "value": "\"1.0.4\""
+    }]
+  }],
+  "suites": [{
+    "id": "22d412f4-1028-496a-86d5-9a7cdea38de9",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["0d8811a9-4970-4be9-bc1e-74fa6eacf044"]
+  }],
+  "urls": ["http://localhost:8080/"],
+  "plugins": []
+}
