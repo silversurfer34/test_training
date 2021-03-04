@@ -20,7 +20,7 @@ def time_sorting_algorithm(algorithm, array):
     #   number=10 will measure the time spend for 10 launches of stmt
     # repeat is the number of repetition of the measure
     #   repeat=10 will measure 10 times and return 10 results
-    times = repeat(setup=setup_code, stmt=stmt, repeat=1, number=1)
+    times = repeat(setup=setup_code, stmt=stmt, repeat=5, number=1)
     # Finally, display the name of the algorithm and the
     # minimum, max, average time it took to run
     print(f"Algorithm: {algorithm}. Minimum execution time: {min(times)}, Max execution time: {max(times)}, "
@@ -34,7 +34,6 @@ if __name__ == "__main__":
     # Generate an array of `ARRAY_LENGTH` items consisting
     # of random integer values between 0 and 999
     array = [randint(0, 1000) for i in range(ARRAY_LENGTH)]
-    # array = [i for i in range(ARRAY_LENGTH)]
     # Call the function using the name of the sorting algorithm
     # and the array you just created
     time_sorting_algorithm(algorithm="sorted", array=array)

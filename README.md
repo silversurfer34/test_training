@@ -1,6 +1,23 @@
 # Welcome to the Tests training
 ##Demos
 ###Unit performance tests using timeit
+For the purpose of this demo we will compare several sort algorithms using timeit
+#### Prerequisites:
+* Python installed
+#### Timeit
+timeit will measure the time spent to execute some statements.
+We will use repeat method from timeit
+```
+times = repeat(setup=setup_code, stmt=stmt, repeat=1, number=1)
+```
+Timeit measure the time spent to run `stmt` executed `number` times.
+
+repeat method runs it `repeat` times and return an array of measured time.
+
+#### Measuring performances
+`perfo/perfo.py` contains the code to run and measure the sorting algorithm.
+
+The sorting algorithm are defined in `simple/sort.py`. You can define your own and test it
 ***
 ###Integration performance tests using locust
 For the purpose of this demo we will test a simple REST API hosted locally in a docker image
@@ -20,7 +37,7 @@ docker pull swaggerapi/petstore
 docker run -d -e SWAGGER_HOST=http://localhost -e SWAGGER_BASE_PATH=/v2 -p 8080:8080 swaggerapi/petstore
 ```
 
-####Configure locust
+#### Locust
 Open locust_files\my_locust_file.py
 
 Run locust
