@@ -1,14 +1,15 @@
 from simple.stringlib import custom_capitalize, basic_capitalize
 import pytest
 
+
 def test_capitalize():
     # initialize
     value = "test value"
-    expected = "Tes t value"
+    expected = "Test value"
     # act
     res = custom_capitalize(value)
     # test
-    assert (res == expected)
+    assert res == expected
 
 
 # TODO Write a test for empty values
@@ -19,18 +20,18 @@ def test_none_capitalize():
     # act
     res = custom_capitalize(value)
     # test
-    assert (res == expected)
+    assert res == expected
 
 
 # TODO Write a test for string starting with a number
 def test_none2_capitalize():
     # initialize
     value = "9 abcd"
-    expected = "9 a bcd"
+    expected = "9 abcd"
     # act
     res = custom_capitalize(value)
     # test
-    assert (res == expected)
+    assert res == expected
 
 
 # TODO Write a test to find a failure
@@ -40,6 +41,7 @@ def test_exception_capitalize():
     with pytest.raises(AttributeError):
         res = basic_capitalize(value)
 
+
 def test_wrong_type_capitalize():
     # initialize
     value = 253
@@ -47,17 +49,7 @@ def test_wrong_type_capitalize():
     # act
     res = custom_capitalize(value)
     # test
-    assert (res == expected)
-
-
-def test_none_capitalize():
-    # initialize
-    value = None
-    expected = None
-    # act
-    res = custom_capitalize(value)
-    # test
-    assert (res == expected)
+    assert res == expected
 
 
 # TODO Add parametrized tests examples

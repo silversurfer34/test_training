@@ -68,18 +68,23 @@ Demo of ide code generation
 ## Pytest tutorial
 ### Prerequisites
 
-First install the requirements
+* Work in virtual environment
+  ```
+  python - m venv .venv
+  .venv\scripts\activate
+  ```
+* Install the requirements
 
 `pip install requirements.txt`
 
-The development requirements
+* Install the development requirements
 
 `pip install requirements_dev.txt`
 
 ## Work to do
 Run the tests
 
-`pytest`
+`pytest tests`
 
 ### 1st exercise
 Open stringlib_test.py and add the missing tests

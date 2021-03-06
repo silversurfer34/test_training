@@ -1,4 +1,5 @@
-#inspired by https://realpython.com/sorting-algorithms-python/#pythons-built-in-sorting-algorithm
+# inspired by https://realpython.com/sorting-algorithms-python/#pythons-built-in-sorting-algorithm
+
 
 def insertion_sort(array):
     # Loop from the second element of the array until
@@ -30,6 +31,7 @@ def insertion_sort(array):
 
     return array
 
+
 def bubble_sort(array):
     n = len(array)
 
@@ -60,6 +62,7 @@ def bubble_sort(array):
             break
 
     return array
+
 
 def merge(left, right):
     # If the first array is empty, then nothing needs
@@ -101,6 +104,7 @@ def merge(left, right):
 
     return result
 
+
 def merge_sort(array):
     # If the input array contains fewer than two elements,
     # then return it as the result of the function
@@ -112,12 +116,11 @@ def merge_sort(array):
     # Sort the array by recursively splitting the input
     # into two equal halves, sorting each half and merging them
     # together into the final result
-    return merge(
-        left=merge_sort(array[:midpoint]),
-        right=merge_sort(array[midpoint:]))
+    return merge(left=merge_sort(array[:midpoint]), right=merge_sort(array[midpoint:]))
 
 
 from random import randint
+
 
 def quicksort(array):
     # If the input array contains fewer than two elements,
