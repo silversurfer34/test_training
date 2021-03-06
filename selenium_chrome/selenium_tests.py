@@ -3,13 +3,12 @@ from selenium.webdriver.common.keys import Keys
 import pytest
 
 
-
-
 @pytest.fixture
 def driver():
     _driver = driver = webdriver.Chrome()
     yield _driver
     _driver.close()
+
 
 def test_search_in_python_org(driver):
     driver.get("http://www.python.org")
