@@ -2,7 +2,7 @@ def basic_capitalize(data: str) -> str:
     return data.capitalize()
 
 
-def custom_capitalize(data: str) -> str:
+def safe_capitalize(data: str) -> str:
     if isinstance(data, str):
-        return data.capitalize()
+        return basic_capitalize(data)
     return data
