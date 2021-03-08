@@ -68,6 +68,8 @@ Demo of ide code generation
   python - m venv .venv
   .venv\scripts\activate
   ```
+  or (depending on the sytem)
+  `source .venv/bin/activate`
 * Install the requirements
 
 `pip install requirements.txt`
@@ -100,7 +102,7 @@ TDD principles:
 5. At one stage refactor your code to make it simpler/nicer, to remove duplication
 
 Requirements:
-- Easy one to start : Write a function that prints "Hello world"
+- Easy one to start : Write a function that returns "Hello world"
 - Create a calculator (a class or a module or a file) with those methods:
   - add to compute the sum of two values 
   - substr to compute the substraction of two values
