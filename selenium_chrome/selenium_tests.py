@@ -5,7 +5,7 @@ import pytest
 
 @pytest.fixture
 def driver():
-    _driver = driver = webdriver.Chrome()
+    _driver = webdriver.Chrome()
     yield _driver
     _driver.close()
 

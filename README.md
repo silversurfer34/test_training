@@ -110,7 +110,7 @@ Requirements:
   - divide to compute the division of one value by the other  
   - average to compute the average of a list of values (should not fail with 0 values)
   
-Ask if requirements are not clear enough
+Ask if requirements are not clear enough  
 Once done, refactor you code to have substr calling add; divide calling multiply; average calling add and divide 
 
 ## Integration tests tutorial
