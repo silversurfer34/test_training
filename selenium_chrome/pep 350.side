@@ -1,0 +1,111 @@
+{
+  "id": "d1aff2a4-649e-4015-96c4-723affcf6859",
+  "version": "2.0",
+  "name": "pep 350",
+  "url": "https://www.python.org",
+  "tests": [{
+    "id": "4da2130c-72b2-4e20-9126-18951b05221e",
+    "name": "1st",
+    "commands": [{
+      "id": "69a82690-5808-4df4-b8d1-9ccf5b126836",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d17dc7cd-4fcd-4da7-b8af-f64309e82bbf",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1176x758",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "82bfafb7-a209-4ee3-9d14-f4b52981d117",
+      "comment": "",
+      "command": "click",
+      "target": "id=id-search-field",
+      "targets": [
+        ["id=id-search-field", "id"],
+        ["name=q", "name"],
+        ["css=#id-search-field", "css:finder"],
+        ["xpath=//input[@id='id-search-field']", "xpath:attributes"],
+        ["xpath=//div[@id='touchnav-wrapper']/header/div/div/div/form/fieldset/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2501cbe9-49d0-4636-abcf-85a68d596816",
+      "comment": "",
+      "command": "type",
+      "target": "id=id-search-field",
+      "targets": [
+        ["id=id-search-field", "id"],
+        ["name=q", "name"],
+        ["css=#id-search-field", "css:finder"],
+        ["xpath=//input[@id='id-search-field']", "xpath:attributes"],
+        ["xpath=//div[@id='touchnav-wrapper']/header/div/div/div/form/fieldset/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "pep 350"
+    }, {
+      "id": "0a975e25-2014-4aaf-b24f-7e36231219c5",
+      "comment": "",
+      "command": "click",
+      "target": "id=submit",
+      "targets": [
+        ["id=submit", "id"],
+        ["name=submit", "name"],
+        ["css=#submit", "css:finder"],
+        ["xpath=//button[@id='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='touchnav-wrapper']/header/div/div/div/form/fieldset/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'GO')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c7827495-3e3f-4fd6-9a97-1ebcad7cf7d0",
+      "comment": "",
+      "command": "click",
+      "target": "css=#content > .container",
+      "targets": [
+        ["css=#content > .container", "css:finder"],
+        ["xpath=//div[@id='content']/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2c930dd1-9825-4abb-96c2-1c2a8eea8f8a",
+      "comment": "",
+      "command": "verifyText",
+      "target": "linkText=PEP 350 -- Codetags",
+      "targets": [
+        ["linkText=PEP 350 -- Codetags", "linkText"],
+        ["css=li:nth-child(1) > h3 > a", "css:finder"],
+        ["xpath=//a[contains(text(),'PEP 350 -- Codetags')]", "xpath:link"],
+        ["xpath=//div[@id='content']/div/section/form/ul/li/h3/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/dev/peps/pep-0350/')]", "xpath:href"],
+        ["xpath=//h3/a", "xpath:position"],
+        ["xpath=//a[contains(.,'PEP 350 -- Codetags')]", "xpath:innerText"]
+      ],
+      "value": "PEP 350 -- Codetags"
+    }, {
+      "id": "f6396d43-ae81-4a52-b3da-c0f95c29a0fd",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "40a7d346-8614-4e18-9452-d79e04407aef",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["4da2130c-72b2-4e20-9126-18951b05221e"]
+  }],
+  "urls": ["https://www.python.org/"],
+  "plugins": []
+}
