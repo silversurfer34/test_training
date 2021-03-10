@@ -48,7 +48,7 @@ def test_exception_capitalize():
         res = basic_capitalize(value)
 
 
-# TODO Write a test for none values
+# TODO Write a test for none values (value = None)
 @pytest.mark.skip
 def test_none_capitalize():
     # initialize
@@ -63,6 +63,7 @@ def test_none_capitalize():
 # TODO Write a new safer version of capitalize which return the input value
 # if the type is not string
 # To test if an object is an instance of a given class use isinstance(data, class):
+# The name of the new function will be safe_capitalize
 def test_wrong_type_capitalize():
     # initialize
     value = 253
@@ -73,7 +74,9 @@ def test_wrong_type_capitalize():
     assert res == expected
 
 
-# TODO Add parametrized tests examples
+# TODO Add parametrized tests
+# with the following input values "normal string", "", "123 string"
+# see https://docs.pytest.org/en/stable/parametrize.html
 TEST_DATA = [("normal string", "Normal string"), ("", ""), ("123 string", "123 string")]
 
 
