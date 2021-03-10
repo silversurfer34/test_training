@@ -134,4 +134,7 @@ pm.test("Status test", function () {
 Do the same for the Add a new pet query
 Duplicate this query and create a negative test (wrong id) with expected 500 code as answer
 
-Open a runner tab, launch the full test suite and check the results
+Open a runner tab, launch the full test suite and check the results  
+It can also be done without the GUI, in command line using newman, exmaple using the docker image of newman  
+`docker run -v /mnt/d/Projects/test_training/postman:/etc/newman -t postman/newman:ubuntu run "tests.json"`
+
