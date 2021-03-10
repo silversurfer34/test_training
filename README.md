@@ -1,6 +1,6 @@
 # Welcome to the Tests training  
-##Demos  
-###Unit performance tests using timeit  
+## Demos  
+### Unit performance tests using timeit  
 For the purpose of this demo we will compare several sort algorithms using timeit
 #### Prerequisites:
 * Python installed
@@ -17,10 +17,10 @@ repeat method runs it `repeat` times and return an array of measured time.
 `perfo/perfo.py` contains the code to run and measure the sorting algorithm.  
 The sorting algorithm are defined in `simple/sort.py`. You can define your own and test it
 ***
-###Integration performance tests using locust
+### Integration performance tests using locust
 For the purpose of this demo we will test a simple REST API hosted locally in a docker image
 
-####Prerequisites:
+#### Prerequisites:
 * Docker installed https://docs.docker.com/docker-for-windows/install/
 * Check if docker is properly installed
 ```
@@ -43,7 +43,7 @@ Run locust
 Optionaly an actual online rest API can be tested  
 `https://petstore.swagger.io/`
 ***
-###System test or end to end (e2e) test with selenium
+### System test or end to end (e2e) test with selenium
 #### Prerequisites:
 * install selenium libraries
   `pip install selenium`
