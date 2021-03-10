@@ -1,6 +1,6 @@
-# Welcome to the Tests training
-##Demos
-###Unit performance tests using timeit
+# Welcome to the Tests training  
+##Demos  
+###Unit performance tests using timeit  
 For the purpose of this demo we will compare several sort algorithms using timeit
 #### Prerequisites:
 * Python installed
